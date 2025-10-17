@@ -1,1 +1,1 @@
-// Google Maps API
+// Handle Google Maps API

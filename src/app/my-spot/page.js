@@ -1,3 +1,9 @@
+// TASKS
+/**
+ * 1. Add the Parking Timer button, the Clear Spot button (returns to the home page as well), and the Get Directions button.
+ * 2. Ensure navigation works between the home page and the my spot page.
+ */
+
 export default function MySpotPage() {
     return (
         <div>
