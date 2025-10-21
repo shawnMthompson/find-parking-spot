@@ -6,11 +6,14 @@
 
 import MapPlaceholder from "@/components/MapPlaceholder.js";
 import Button from "@/components/Button.js";
+import ParkingTimer from "@/components/ParkingTimer.js"
 
 export default function MySpotPage() {
     return (
         <div>
           <MapPlaceholder />
+
+          <ParkingTimer />
 
           {/** Bottom-Right */}
           <div className="fixed bottom-10 right-10 p-4"><Button text="Get Directions"/></div>
