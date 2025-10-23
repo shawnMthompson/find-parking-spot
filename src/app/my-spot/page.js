@@ -13,13 +13,14 @@ export default function MySpotPage() {
         <div>
           <MapPlaceholder />
 
-          <ParkingTimer />
+           {/** Top-Right */}
+          <div className="fixed top-10 right-10 p-4"><Button text="Parking Timer"/></div>
+
+          {/** Top-Left */}
+          <div className="fixed top-10 left-10 p-4"><ParkingTimer/></div>
 
           {/** Bottom-Right */}
           <div className="fixed bottom-10 right-10 p-4"><Button text="Get Directions"/></div>
-
-          {/** Top-Right */}
-          <div className="fixed top-10 right-10 p-4"><Button text="Parking Timer"/></div>
           
           {/** Bottom-Left */}
           <div className="fixed bottom-10 left-10 p-4"><Button text="Clear Spot" route="/home"/></div>
