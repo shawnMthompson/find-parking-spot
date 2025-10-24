@@ -1,6 +1,7 @@
 "use client";
 
-// This was by and far one of the most annoying things I've ever had to get working... I did it though and it works pretty well!
+// This was by and far one of the most annoying things I've ever had to get working as I intended... I did it though and it works pretty well!
+// I take that back in retrospect... the map was WAY worse...
 
 import { FaCaretDown } from "react-icons/fa";
 import { FaCaretUp } from "react-icons/fa";
@@ -13,7 +14,7 @@ export default function ParkingTimer() {
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
-    const [remaining, setRemaining] = useState(0); // seconds
+    const [remaining, setRemaining] = useState(0); // in seconds
     const [isRunning, setIsRunning] = useState(false);
     const intervalRef = useRef(null);
 
@@ -82,11 +83,10 @@ export default function ParkingTimer() {
                 intervalRef.current = null;
             }
         };
-        // The line below just disables the error line on my end.
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isRunning]);
 
-    // Keep inputs in valid ranges
+    // Keep inputs within their valid ranges of time
     const onChangeHours = (e) => setHours(clamp(e.target.value, 0, 24));
     const onChangeMinutes = (e) => setMinutes(clamp(e.target.value, 0, 59));
     const onChangeSeconds = (e) => setSeconds(clamp(e.target.value, 0, 59));
