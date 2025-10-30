@@ -1,8 +1,5 @@
 "use client";
 
-// This was by and far one of the most annoying things I've ever had to get working as I intended... I did it though and it works pretty well!
-// I take that back in retrospect... the map was WAY worse...
-
 import { FaCaretDown } from "react-icons/fa";
 import { FaCaretUp } from "react-icons/fa";
 

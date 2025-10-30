@@ -1,13 +1,5 @@
 "use client";
 
-/**
- * There was probably 10 billion better ways to do all of the google maps implementation, 
- * but I'm just glad it's working after pouring nearly 6 hours into this already.
- * 
- * It is a little slow on the load (I think it's because of how I handled fetching geolocation), but it isn't super egregious, so I think it's fine for now. 
- * Though, I will try to improve on it in the next milestone.
- */
-
 import { useEffect, useRef, useState, forwardRef, useImperativeHandle } from "react";
 import { loadGoogleMaps, createMarker, initMap } from "@/utilities/maps.js";
 import { saveSpot, getSpot, clearSpot as clearStoredSpot } from "@/utilities/storage.js";
