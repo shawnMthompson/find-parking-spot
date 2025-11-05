@@ -1,4 +1,4 @@
-# Pokedex Web App
+# Find Parking Spot
 
 ## Installation
 
