@@ -28,7 +28,7 @@ export default function MySpotPage() {
      * Leaving origin empty just lets Google Maps use the user's current location (as long as geolocation is enabled), which works well for this case.
      * This does involve leaving the app, but I think this is a good temporary solution since I can't seem to get the DirectionServices working within the app atm.
      */
-    const url = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}&travelmode=driving`;
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${spot.lat},${spot.lng}&travelmode=walking`;
     window.open(url, "_blank"); // New Tab
   }
 
